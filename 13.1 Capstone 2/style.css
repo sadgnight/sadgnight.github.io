@@ -1,0 +1,86 @@
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.titles{
+  background-color: #405D72;
+  color: #FFF8F3;
+}
+.titles > *{
+  color: #FFF8F3;
+}
+
+* { margin: 0; padding: 0; }
+
+body{
+  background-color: #F7E7DC;
+}
+.alginment{
+  text-align: left;
+  justify-content: end;
+  align-content: end;
+}
+
+.parent{
+  display: grid;
+  grid-template-columns: 1fr 3fr 4fr 1fr;
+  grid-template-rows: repeat(1,1fr);
+  gap: 20px;
+}
+
+.cat{
+  grid-area: 1/2/2/3;
+}
+.design{
+  grid-area: 1/3/2/4;
+}
+.electrical{
+  grid-area: 2/2/3/3;
+}
+.engineering{
+  grid-area: 2/3/3/4;
+
+}
+@media (max-width: 600px) {
+  .cat{
+    grid-area: 1/1/2/3;
+  }
+  .design{
+    grid-area: 1/3/2/5;
+  }
+  .electrical{
+    grid-area: 2/1/3/3;
+  }
+  .engineering{
+    grid-area: 2/3/3/5;
+  
+  }
+}
+.contact{
+  background-color: #FFF8F3;
+}
+.IMPORTANT{
+  font-weight: bold;
+}
